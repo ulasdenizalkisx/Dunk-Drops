@@ -1,0 +1,681 @@
+* { box-sizing: border-box; }
+
+html {
+	scroll-behavior: smooth;
+}
+
+body { margin: 0px; padding: 0px;}
+
+/* Header */
+
+.header1 {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	align-items: center;
+	background: #121212;
+  	background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  	);
+  	background-size: 40px 40px;
+
+  	animation: move 4s linear infinite;
+	}
+
+	@keyframes move {
+  	0% {
+    background-position: 0 0;
+  	}
+  	100% {
+    background-position: 40px 40px;
+  	}
+}
+
+
+.header1 a{
+	text-decoration:none;
+}
+
+.logo {
+	font-family: Bebas Neue;
+	font-weight: 400;
+	font-size: 5vw;
+	letter-spacing: 15px;
+	word-spacing: 20px;
+	margin: 0;
+	text-indent: 25px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+/* Navbar */
+
+.iconsdiv {
+	width: 35%;
+	display: flex;
+	flex-flow: nowrap row;
+	justify-content: space-around;
+}
+
+
+.fa-brands {
+	color: #fff;
+	padding: 3px;
+	transition: 0.3s;
+}
+
+.fa-brands.fa-instagram.fa-4x {
+	font-size: 4vw;
+}
+
+.fa-brands.fa-youtube.fa-4x {
+	font-size: 4vw;
+}
+
+.fa-brands.fa-x-twitter.fa-4x {
+	font-size: 4vw;
+}
+
+.fa-brands.fa-tiktok.fa-4x {
+	font-size: 4vw;
+}
+
+.fa-brands:hover {
+	color: #949494;
+}
+
+
+.nav1 {
+	width: 100%;
+	margin: auto;
+	background-color: #b6aaa8;
+	height: auto;
+	text-decoration: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: start;
+}
+
+.nav2 {
+	text-decoration: none;
+	color: black;
+	font-family: Bebas Neue;
+	font-size: 25px;
+	text-align: center;
+	width: 25%;
+	transition: 0.3s ease;
+	word-spacing: 4px;
+	cursor: pointer;
+}
+
+
+.nav2:hover {
+	text-decoration: none;
+	color: white;
+	font-family: Bebas Neue;
+	font-size: 25px;
+	text-align: center;
+	width: 25%;
+	background-color: #857c7a;
+}
+
+
+nav { position: sticky; top: 0px; z-index: 999;}
+
+/* Second Header */
+
+.sHeader {
+	background-color: #2f6656;
+	position: relative;
+	text-align: center;
+}
+
+.sHeader img {
+	width: 100%;
+	height: auto;
+}
+
+.sp1 {
+	position:absolute;
+	top: 20%;
+	left: 10%;
+	right: 10%;
+}
+
+.sp2 {
+	position:absolute;
+	top: 40%;
+	left: 10%;
+	right: 10%;
+}
+
+.sp1 p {
+	font-family:Poppins;
+	font-size: 5vw;
+	font-weight: 800;
+	color: rgb(20,59,59);
+	margin: 0;
+	padding: 2px;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.sp2 p {
+	font-family:Poppins;
+	font-size: 4vw;
+	font-weight: 800;
+	color: rgb(20,59,59);
+	margin: 0;
+	padding: 2px;
+	background-color: rgba(255,255,255,0.6);
+}
+
+/* Contents */
+
+
+.ar1 {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	overflow: hidden;
+	--u: 5px;
+  --c1: #ededee;
+  --c2: #000000;
+  --c3: #1e1e1e;
+  --gp: 50% / calc(var(--u) * 16.9) calc(var(--u) * 12.8);
+  background: conic-gradient(
+        from 122deg at 50% 85.15%,
+        var(--c2) 0 58deg,
+        var(--c3) 0 116deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    conic-gradient(from 122deg at 50% 72.5%, var(--c1) 0 116deg, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from 58deg at 82.85% 50%, var(--c3) 0 64deg, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(
+        from 58deg at 66.87% 50%,
+        var(--c1) 0 64deg,
+        var(--c2) 0 130deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    conic-gradient(from 238deg at 17.15% 50%, var(--c2) 0 64deg, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(
+        from 172deg at 33.13% 50%,
+        var(--c3) 0 66deg,
+        var(--c1) 0 130deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    linear-gradient(98deg, var(--c3) 0 15%, #fff0 calc(15% + 1px) 100%)
+      var(--gp),
+    linear-gradient(-98deg, var(--c2) 0 15%, #fff0 calc(15% + 1px) 100%)
+      var(--gp),
+    conic-gradient(
+        from -58deg at 50.25% 14.85%,
+        var(--c3) 0 58deg,
+        var(--c2) 0 116deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    conic-gradient(from -58deg at 50% 28.125%, var(--c1) 0 116deg, #fff0 0 100%)
+      var(--gp),
+    linear-gradient(90deg, var(--c2) 0 50%, var(--c3) 0 100%) var(--gp);
+}
+
+.ar2 {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	overflow: hidden;
+	--s: 84px;
+  --c1: #f2f2f2;
+  --c2: #cdcbcc;
+  --c3: #999999;
+
+  --_g: 0 120deg, #0000 0;
+  background: conic-gradient(
+      from 0deg at calc(500% / 6) calc(100% / 3),
+      var(--c3) var(--_g)
+    ),
+    conic-gradient(
+      from -120deg at calc(100% / 6) calc(100% / 3),
+      var(--c2) var(--_g)
+    ),
+    conic-gradient(
+      from 120deg at calc(100% / 3) calc(500% / 6),
+      var(--c1) var(--_g)
+    ),
+    conic-gradient(
+      from 120deg at calc(200% / 3) calc(500% / 6),
+      var(--c1) var(--_g)
+    ),
+    conic-gradient(
+      from -180deg at calc(100% / 3) 50%,
+      var(--c2) 60deg,
+      var(--c1) var(--_g)
+    ),
+    conic-gradient(
+      from 60deg at calc(200% / 3) 50%,
+      var(--c1) 60deg,
+      var(--c3) var(--_g)
+    ),
+    conic-gradient(
+      from -60deg at 50% calc(100% / 3),
+      var(--c1) 120deg,
+      var(--c2) 0 240deg,
+      var(--c3) 0
+    );
+  background-size: calc(var(--s) * 1.732) var(--s);
+}
+
+.ar3 {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	overflow: hidden;
+	--s: 200px; /* control the size */
+  --c1: #414141;
+  --c2: #bebebe;
+  --c3: #ffffff;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+.ar4 {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	overflow: hidden;
+	--s: 82px;
+  --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9;
+
+  --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+    linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    );
+  background-size: calc(1.732 * var(--s)) var(--s);
+}
+
+.ar5 {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+	overflow: hidden;
+	--s: 222px;
+  --c1: #7f727b;
+  --c2: #d6b4c2;
+  --c3: #baa0ab;
+
+  --_g: var(--c1) 10%, var(--c2) 10.5% 19%, #0000 19.5% 80.5%,
+    var(--c2) 81% 89.5%, var(--c3) 90%;
+  --_c: from -90deg at 37.5% 50%, #0000 75%;
+  --_l1: linear-gradient(145deg, var(--_g));
+  --_l2: linear-gradient(35deg, var(--_g));
+  background: var(--_l1), var(--_l1) calc(var(--s) / 2) var(--s), var(--_l2),
+    var(--_l2) calc(var(--s) / 2) var(--s),
+    conic-gradient(var(--_c), var(--c1) 0) calc(var(--s) / 8) 0,
+    conic-gradient(var(--_c), var(--c3) 0) calc(var(--s) / 2) 0,
+    linear-gradient(
+      90deg,
+      var(--c3) 38%,
+      var(--c1) 0 50%,
+      var(--c3) 0 62%,
+      var(--c1) 0
+    );
+  background-size: var(--s) calc(2 * var(--s) / 3);
+}
+ 
+.jht {
+  width: 100%;
+  height:20vh;
+  text-align: center;
+  display:flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    hsl(0deg 0% 13%) 0%,
+    hsl(344deg 0% 32%) 8%,
+    hsl(344deg 0% 54%) 17%,
+    hsl(0deg 0% 78%) 25%,
+    hsl(344deg 0% 77%) 33%,
+    hsl(344deg 0% 76%) 42%,
+    hsl(0deg 0% 76%) 50%,
+    hsl(344deg 0% 76%) 58%,
+    hsl(344deg 0% 77%) 67%,
+    hsl(0deg 0% 78%) 75%,
+    hsl(344deg 0% 54%) 83%,
+    hsl(344deg 0% 32%) 92%,
+    hsl(0deg 0% 13%) 100%
+  );
+}
+
+.jht h1 {
+	color: #000;
+	font-family: Poppins;
+	font-size: 7vw;
+}
+
+
+.j1 {
+	display: flex;
+	flex-flow: nowrap row;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.j2 {
+	display: flex;
+	flex-flow: nowrap row;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.j3 {
+	display: flex;
+	flex-flow: nowrap row;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.j1 div {
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 30px;
+	width: 22%;
+}
+
+.j2 div {
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 30px;
+	width: 22%;
+}
+
+.j3 div {
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 30px;
+	width: 22%;
+}
+
+
+
+.jf1 {
+	margin: 0; 
+	color:#000; 
+	position:relative; 
+	bottom: 3vh;
+	font-family: Geo;
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+.jf2 {
+	margin: 0; 
+	color: #d1d1d1; 
+	position:relative; 
+	bottom: 3vh;
+	font-family: Geo;
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+.jf3 {
+	margin: 0; 
+	color: #fff; 
+	position:relative; 
+	bottom: 3vh;
+	font-family: Geo;
+	font-size: 3vw;
+	font-weight: 700;
+}
+
+.j1 div img {
+	width: 100%;
+  height: auto;
+	cursor: pointer;
+	z-index: -999;
+	transition: 0.4s;
+	filter:drop-shadow(2px 2px 20px #000);
+}
+
+.j2 div img {
+	width: 100%;
+  	height: auto;
+	cursor: pointer;
+	z-index: -999;
+	transition: 0.4s;
+	filter:drop-shadow(2px 2px 20px #000);
+}
+
+.j1 div img:hover {
+	transform: scale(1.2);
+}
+
+.j2 div img:hover {
+	transform: scale(1.2);
+}
+
+.j3 div img:hover {
+	transform: scale(1.2);
+}
+
+/* Footer */
+
+.aboutUs {
+	background-color: #212121;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-around;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+.aboutUsH {
+	display:flex;
+	flex-flow: wrap row;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+.aboutUsH h1{
+	margin: 0;
+	font-family: Poppins;
+	font-size: 8vw;
+	color: #999999;
+}
+
+.card {
+ 	width: 22vw;
+	height: 25vw;
+ 	border-radius: 30px;
+ 	background: #181818;
+ 	transition: 0.3s;
+ 	box-shadow: none;
+	padding: 10px;
+	transform-origin: center center;
+}
+
+hr {
+	opacity: 0.3;
+}
+
+
+.card h1{
+  margin: 0;
+  color: rgba(255,255,255,0.5);
+  font-family: Poppins;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.card p{
+  margin: 0;
+  font-family: Poppins;
+  text-align: center;
+  font-size: 1.1vw;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.card:hover {
+width: 22vw;
+height: 25vw;
+border-radius: 30px;
+background: #212121;
+transform: translate(15px,15px);
+box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+ 
+.form {
+	position: fixed;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 33.975084937712346vw;
+  background-color: rgba(0,0,0,0.9);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: -9999;
+}
+
+.form .title {
+  color: #fff;
+  width: 100%;
+  font-size: 3.5vh;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Poppins;
+}
+
+.form .title p{
+  margin: 0;
+  max-height: 30px;
+  padding-bottom: 8px;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 1vw 1.5vh;
+  border-radius: 8px;
+  width: 100%;
+  height: 5.5vh;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 11vh;
+  width: 100%;
+  outline: 0;
+  padding: 1vw 1.5vh;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form .button2 {
+	font-family: Poppins;
+  align-self: flex-end;
+  padding: 0.86vw 1vh;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.8vh;
+  font-weight: 500;
+  background-color: #212121;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form .button1 {
+	background-color: rgba(0,0,0,0);
+	border: 0px solid black;
+	font-size: 35px;
+	font-family: Poppins;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 81%;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
