@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dunk Drops | Dunks</title>
+	<link rel="stylesheet" type="text/css" href="css/aboutjordans.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geo:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/d20dff5571.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header  id="head123">
+		<div class="header1">
+			<a href="main.html"><h1 class="logo">Dunk Drops</h1></a>
+			<div class="iconsdiv">
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-4x"></i></a>
+				<a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-4x"></i></a>
+				<a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-4x"></i></a>
+				<a href="https://www.tiktok.com/tr-TR/" target="_blank"><i class="fa-brands fa-tiktok fa-4x"></i></a>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="nav1">
+			<a class="nav2" href="main.html">Home</a>
+			<a class="nav2" href="main.html#buynow1">Buy Now</a>
+			<a class="nav2" href="main.html#aboutUs1">About us</a>
+			<a class="nav2" id="contactButton">Contact</a>
+		</div>
+	</nav>
+
+	<header>
+		<div class="header"><h1>ABOUT DUNKS</h1></div>
+	</header>
+
+	<article>
+		<section>
+			<div class="cont">
+				<div class="history"><h1>The History</h1><hr><p>The Nike Dunk was introduced in 1985 as a basketball shoe, designed to cater to college basketball players. It debuted with the "Be True to Your School" campaign, featuring colorways inspired by college teams, instantly capturing the spirit of loyalty and individuality. Over time, the Dunk transitioned from the basketball court to skateboarding culture and streetwear, becoming an icon in the sneaker world. Its timeless design and versatility have cemented its place in fashion and sport, making it a favorite for sneaker enthusiasts globally.</p></div>
+
+				<div class="history1"><h1>Materials Used</h1><hr><p>Leather and Synthetic Uppers: Provide a clean, structured look while ensuring durability and support.</p><p>
+				Foam Padded Collar: Enhances ankle support and comfort, making the shoe suitable for long wear.</p><p>
+				Cushioned Insoles: Deliver comfort and shock absorption for both athletic and casual use.</p><p>
+				Rubber Outsoles: Feature circular tread patterns for superior grip on various surfaces, from courts to skate parks.</p></div>
+
+				<div class="history1"><h1>Why Choose Dunks</h1><hr><p>Versatility: With a sleek and classic design, Dunks pair well with a variety of outfits, making them perfect for both casual and athletic wear.</p><p>
+				Cultural Impact: The Dunk has a rich history tied to basketball, skateboarding, and streetwear, symbolizing authenticity and individuality.</p><p>
+				Durability: High-quality materials ensure that the shoe holds up well over time, whether for sport or daily wear.</p><p>
+				Wide Variety: Available in numerous colorways and collaborations, Dunks offer something for every taste, from minimalist styles to bold, artistic designs.</p><p>
+				Collectibility: Limited editions and collaborations often become highly sought after, making Dunks a valuable addition to any sneaker collection.</p></div>
+				</div>
+		</section>
+	</article>
+
+
+
+
+
+
+<form class="form" id="contactform">
+		<button class="button1" id="closecform">&#215;</button>
+    	<div class="title"><p>Contact us</p></div>
+    	<input type="email" placeholder="Your email" class="input">
+    	<textarea placeholder="Your message"></textarea>
+    	<input class="button2" type="submit" value="Submit">
+	</form>
+
+	<script>
+function toggleContactForm(show) {
+    const form = document.getElementById('contactform');
+    if (show) {
+        form.style.display = 'flex';
+        form.style.zIndex = '9999';
+    } else {
+        form.style.display = 'none';
+        form.style.zIndex = '';
+    }
+}
+
+document.getElementById('contactButton').addEventListener('click', function () {
+    toggleContactForm(true);
+});
+
+document.getElementById('closecform').addEventListener('click', function (e) {
+    e.preventDefault();
+    toggleContactForm(false);
+});
+
+
+	</script>
+
+	<script>
+		document.querySelector('.button2[type="submit"]').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const form = document.getElementById('contactform');
+
+    form.reset();
+
+    toggleContactForm(false);
+
+});
+	</script>
+</body>
+</html>

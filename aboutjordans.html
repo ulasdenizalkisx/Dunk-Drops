@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dunk Drops | Jordans</title>
+	<link rel="stylesheet" type="text/css" href="css/aboutjordans.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geo:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/d20dff5571.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header  id="head123">
+		<div class="header1">
+			<a href="main.html"><h1 class="logo">Dunk Drops</h1></a>
+			<div class="iconsdiv">
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-4x"></i></a>
+				<a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-4x"></i></a>
+				<a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-4x"></i></a>
+				<a href="https://www.tiktok.com/tr-TR/" target="_blank"><i class="fa-brands fa-tiktok fa-4x"></i></a>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<div class="nav1">
+			<a class="nav2" href="main.html">Home</a>
+			<a class="nav2" href="main.html#buynow1">Buy Now</a>
+			<a class="nav2" href="main.html#aboutUs1">About us</a>
+			<a class="nav2" id="contactButton">Contact</a>
+		</div>
+	</nav>
+
+	<header>
+		<div class="header"><h1>ABOUT JORDANS</h1></div>
+	</header>
+
+	<article>
+		<section>
+			<div class="cont">
+				<div class="history"><h1>The History</h1><hr><p>Nike Jordan shoes were born out of a historic collaboration between Nike and NBA legend Michael Jordan in 1984. The first model, Air Jordan 1, was released in 1985, revolutionizing the sneaker industry. Initially designed as performance basketball shoes, they quickly transcended the court and became an icon in streetwear culture. Over the years, Jordan Brand has expanded its lineup, blending cutting-edge technology with timeless design, making these sneakers a symbol of style and innovation.</p></div>
+
+				<div class="history1"><h1>Materials Used</h1><hr><p>Leather: High-quality full-grain or synthetic leather provides support and a sleek aesthetic.</p><p>
+				Mesh and Knit Fabrics: Enhance breathability and reduce weight for added comfort.</p><p>
+				Foam Midsoles: Often featuring Nike's Air cushioning technology, offering excellent shock absorption and responsiveness.</p><p>
+				Rubber Outsoles: Engineered for traction and durability on both courts and streets.</p></div>
+
+				<div class="history1"><h1>Why Choose Jordans</h1><hr><p>Heritage and Legacy: Owning a pair of Jordans means being part of a legendary story tied to basketball and street culture.</p><p>
+				Performance Excellence: Designed for athletes, Jordans offer exceptional support, cushioning, and grip, making them suitable for both sports and everyday wear.</p><p>
+				Style and Versatility: With iconic designs and a wide range of colorways, Jordans effortlessly complement various fashion styles.</p><p>
+				Durability: The use of top-notch materials ensures that Jordans last longer than many other sneakers on the market.</p><p>
+				Investment Value: Many Jordan models become collectibles, appreciating in value over time.</p></div>
+				</div>
+		</section>
+	</article>
+
+
+
+
+
+
+<form class="form" id="contactform">
+		<button class="button1" id="closecform">&#215;</button>
+    	<div class="title"><p>Contact us</p></div>
+    	<input type="email" placeholder="Your email" class="input">
+    	<textarea placeholder="Your message"></textarea>
+    	<input class="button2" type="submit" value="Submit">
+	</form>
+
+	<script>
+function toggleContactForm(show) {
+    const form = document.getElementById('contactform');
+    if (show) {
+        form.style.display = 'flex';
+        form.style.zIndex = '9999';
+    } else {
+        form.style.display = 'none';
+        form.style.zIndex = '';
+    }
+}
+
+document.getElementById('contactButton').addEventListener('click', function () {
+    toggleContactForm(true);
+});
+
+document.getElementById('closecform').addEventListener('click', function (e) {
+    e.preventDefault();
+    toggleContactForm(false);
+});
+
+
+	</script>
+
+	<script>
+		document.querySelector('.button2[type="submit"]').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const form = document.getElementById('contactform');
+
+    form.reset();
+
+    toggleContactForm(false);
+
+});
+	</script>
+</body>
+</html>

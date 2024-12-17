@@ -464,6 +464,28 @@ nav { position: sticky; top: 0px; z-index: 999;}
 	font-weight: 700;
 }
 
+.cmore {
+	margin: 0; 
+	color:#000; 
+	position:relative; 
+	bottom: 1vh;
+	font-family: Geo;
+	font-size: 2vw;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.cmore1 {
+	margin: 0; 
+	color:#fff; 
+	position:relative; 
+	bottom: 1vh;
+	font-family: Geo;
+	font-size: 2vw;
+	font-weight: 700;
+	text-decoration: none;
+}
+
 .jf2 {
 	margin: 0; 
 	color: #d1d1d1; 
